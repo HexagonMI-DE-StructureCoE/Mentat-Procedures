@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menubar>
 
-  <menu title="Fabio Demo">
+  <menu title="Utilities">
 
     <exec    title="clean_old_proc"
              command='*py_file_run "$MENU_FILE_DIR/clean_old_proc.py"'

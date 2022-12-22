@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menubar>
+
+  <menu title="Fabio Demo">
+
+    <exec    title="CREATE_CUBE_1x1x1"
+             command='*exec_procedure "$MENU_FILE_DIR/cubetto.proc"'
+             help="CREA_CUBETTO"/>
+
+  </menu>
+
+</menubar>

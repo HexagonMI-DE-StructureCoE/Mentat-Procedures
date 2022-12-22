@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbars>
+
+  <top>
+
+    <!--toolbar name="honeycomb">
+
+      <popmenu title="Honeycomb"
+               icon="$MENU_FILE_DIR/plate_with_hole_icon2.png"
+               popmenu="add_Honeycomb_popmenu"
+               file="plugin_honeycomb.ms"
+               help="honeycomb"/>
+    </toolbar-->
+    
+  </top>
+  
+</toolbars>

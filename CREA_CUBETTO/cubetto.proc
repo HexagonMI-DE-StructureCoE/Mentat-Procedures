@@ -1,0 +1,88 @@
+| 
+
+*system_grid_display_on
+
+*add_elements
+ node(  0.000000000000e+00,  0.000000000000e+00,  0.000000000000e+00)
+ node(  1.000000000000e+00,  0.000000000000e+00,  0.000000000000e+00)
+ node(  1.000000000000e+00,  1.000000000000e+00,  0.000000000000e+00)
+ node(  0.000000000000e+00,  1.000000000000e+00,  0.000000000000e+00)
+
+*set_expand_translations
+0 0 1
+*expand_elements
+all_existing
+*sweep_all
+*remove_unused_nodes
+*renumber_all
+
+*system_grid_display_off
+
+*new_mater standard *mater_option general:state:solid *mater_option general:skip_structural:off
+*mater_param structural:youngs_modulus 200000
+*add_mater_elements
+all_existing
+
+
+*new_apply *apply_type fixed_displacement
+*apply_dof x *apply_dof_value x
+*add_apply_nodes
+ 1 2 5 6
+# | End of List
+
+*new_apply *apply_type fixed_displacement
+*apply_dof z *apply_dof_value z
+*add_apply_nodes
+ 1 2 3 4
+*mouse_button_press(1)
+# | End of List
+
+*new_apply *apply_type fixed_displacement
+*apply_dof y *apply_dof_value y
+*add_apply_nodes
+ 1 2 5 6
+*mouse_button_press(1)
+# | End of List
+*identify_applys *redraw
+
+*edit_apply apply1
+
+*remove_apply_nodes
+all_existing
+*add_apply_nodes
+ 1 4 5 8
+*mouse_button_press(1)
+# | End of List
+*apply_name dispx
+*edit_apply apply2
+
+*apply_name dispy
+*apply_name dispz
+*edit_apply apply3
+
+*apply_name dispy
+*new_apply *apply_type fixed_displacement
+*apply_dof x *apply_dof_value x
+*apply_dof_value x 0.5
+@set($dof,x)
+*new_pre_defined_table linear_ramp_time *apply_dof_table x table_name() @popdown(apply_dof_table_pm, 0)
+*add_apply_nodes
+*current_graphics_window model:1
+*add_apply_nodes
+ 2 3 6 7
+# | End of List
+
+
+*new_loadcase *loadcase_type struc:static
+*loadcase_value nsteps 1
+*prog_use_current_job on *new_job structural
+*add_post_var von_mises
+
+| Appended by Marc Mentat 2022.3 (64bit)
+
+|
+*edit_apply apply4
+
+*apply_name sposta
+
+*add_job_loadcases lcase1
