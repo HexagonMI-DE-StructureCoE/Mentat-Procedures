@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbars>
+
+  <right_graphics>
+
+    <toolbar name="List Specification FS">
+
+      <exec title="All Existing"
+            icon=":/images/general/AllExistingMedium.png"
+            icon_dark=":/images/general/AllExistingMedium_dark.png"
+            command="all_existing"
+            active="or(list_requested, sample_point_list_requested, solid_feature_list_requested, mater_list_requested, geom_list_requested, srfprop_list_requested)"/>
+
+      <exec title="All Selected"
+            icon=":/images/general/AllSelectedMedium.png"
+            icon_dark=":/images/general/AllSelectedMedium_dark.png"
+            command="all_selected"
+            active="list_requested"/>
+
+      <exec title="All Unselected"
+            icon=":/images/general/AllUnselectedMedium.png"
+            icon_dark=":/images/general/AllUnselectedMedium_dark.png"
+            command="all_unselected"
+            active="list_requested"/>
+
+      <exec title="All Visible"
+            icon=":/images/general/AllVisibleMedium.png"
+            icon_dark=":/images/general/AllVisibleMedium_dark.png"
+            command="all_visible"
+            active="list_requested"/>
+
+      <exec title="All Invisible"
+            icon=":/images/general/AllInvisibleMedium.png"
+            icon_dark=":/images/general/AllInvisibleMedium_dark.png"
+            command="all_invisible"
+            active="list_requested"/>
+
+      <exec title="All Outline"
+            icon=":/images/general/AllOutlineMedium.png"
+            icon_dark=":/images/general/AllOutlineMedium_dark.png"
+            command="all_outline"
+            active="and(list_requested,
+                        or(requested_node, requested_edge,
+                           requested_edge_side))"/>
+
+      <exec title="All Surface"
+            icon=":/images/general/AllSurfaceMedium.png"
+            icon_dark=":/images/general/AllSurfaceMedium_dark.png"
+            command="all_surface"
+            active="and(list_requested,
+                        or(requested_node, requested_edge, requested_edge_side,
+                           requested_face, requested_face_side))"/>
+
+      <exec title="All Top"
+            icon=":/images/general/AllTopMedium.png"
+            icon_dark=":/images/general/AllTopMedium_dark.png"
+            command="all_top"
+            active="and(list_requested,
+                        or(requested_edge_side, requested_face_side,
+                           requested_curve_side, requested_surface_side,
+                           requested_solid_edge_side, requested_solid_face_side,
+                           requested_msect_edge_side,
+                           requested_msect_face_side))"/>
+
+      <exec title= "All Bottom"
+            icon=":/images/general/AllBottomMedium.png"
+            icon_dark=":/images/general/AllBottomMedium_dark.png"
+            command="all_bottom"
+            active="and(list_requested,
+                        or(requested_edge_side, requested_face_side,
+                           requested_curve_side, requested_surface_side,
+                           requested_solid_edge_side, requested_solid_face_side,
+                           requested_msect_edge_side,
+                           requested_msect_face_side))"/>
+
+      <separator/>
+
+      <popmenu title="Choose Set"
+               icon=":/images/general/PickSetMedium.png"
+               icon_dark=":/images/general/PickSetMedium_dark.png"
+               tooltip="Choose currently defined set(s)"
+               popmenu="pick_set_popmenu"
+               file="select.ms"
+               active="and(exists_set, or(list_requested, stack_requested))"/>
+
+      <separator/>
+      
+      <toggle title="Picking Mode"
+              icon=":/images/general/ThunderBolt.png"
+              tooltip="Pick execution mode: automatic or manual"
+              true_command="*auto_picking_on"
+              false_command="*auto_picking_off"
+              toggle="and(auto_picking_mode,not(stack_requested))"
+              active="not(stack_requested)"/>
+
+      <exec title="End List (#)"
+            icon=":/images/general/EndListMedium.png"
+            icon_dark=":/images/general/EndListMedium_dark.png"
+            command="#"
+            active="or(list_requested, stack_requested,
+                       sample_point_list_requested,
+                       sample_point_stack_requested)"/>
+
+    </toolbar>
+
+    
+  </right_graphics>
+  
+</toolbars>
