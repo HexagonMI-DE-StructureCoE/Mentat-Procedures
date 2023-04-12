@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbars>
+
+  <top>
+
+    <toolbar name="User 1 Plugin">
+
+      <popmenu title="User 1 Plugin"
+               icon="$MENU_FILE_DIR/user1_plugin_icon.png"
+               popmenu="user1_plugin_pm"
+               file="plugin.ms"
+               help="user1_plugin"/>
+    </toolbar>
+    
+  </top>
+  
+</toolbars>
