@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menubar>
+
+  <menu title="Results v2">
+
+    <exec title="REPORT MODEL"
+          command='*py_file_run "$MENU_FILE_DIR/report_model.py"'
+          help="report_model"/>
+    <exec title="REPORT RESULTS"
+          command='*py_file_run "$MENU_FILE_DIR/report_results.py"'
+          help="report_results"/>
+  </menu>
+
+</menubar>
