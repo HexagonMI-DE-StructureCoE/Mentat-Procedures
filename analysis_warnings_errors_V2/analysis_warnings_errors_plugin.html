@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<title>Analysis Warnings & Errors</title>
+<link rel="stylesheet" type="text/css" href="../mmhelp.css">
+</head>
+
+<body>
+
+<h1>Analysis Warnings & Errors</h1>
+
+<p>This plugin uses a Perl script to scan the Marc output file of the current job and 
+extracts information from the warning and error messages that appear in this file. The 
+plugin creates one or more sets to display the following information:</p>
+
+<ul><li><p>List of nodes that are separating</p>
+    <li><p>List of INSERT nodes that have not converged</p>
+    <li><p>List of contact node sliding along segment</p>
+    <li><p>List of contact nodes belonging to more than 1 body</p>
+    <li><p>List of contact nodes that have a DOF conflict</p>
+    <li><p>List of inside out elements</p>
+    <li><p>List of nodes that have max displacement change and increment
+           from convergence criteria</p>
+    <li><p>List of nodes that have max residual change and increment
+           from convergence criteria</p>
+    <li><p>Contacting Nodes</p>
+    <li><p>Bad beam section</p>
+    <li><p>Bad quadratic projection</p>
+    <li><p>IPC check (ddu multiplied by x to avoid large displacements...)</p>
+    <li><p>IPC check (ddu multiplied by x to avoid penetration)</p>
+    <li><p>too many nodes joined to node</p>
+    <li><p>Projection for contact node failed</p>
+    <li><p>Bad rigid body orientation</p>
+    <li><p>Node separated 5 times and will be skipped </p>
+    <li><p>Incorrect degenerated Hex elements</p>
+    <li><p>Start of assembly</p>
+    <li><p>Start of matrix solution</p>
+    <li><p>End of matrix solution</p>
+    <li><p>Start of global remeshng</p>
+    <li><p>Axisymmetric element has negative radius</p>
+    <li><p>IPC check (ddu multiplied by x to avoid penetration) - but only 1e-6 values</p>
+    <li><p>Zero length in element</p>
+    <li><p>Tying debug capture</p>
+</ul>
+
+<p>This plugin requires that Perl is installed on the machine.</p>
+
+</body>
+</html>
