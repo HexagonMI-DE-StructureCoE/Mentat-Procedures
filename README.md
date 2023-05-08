@@ -14,4 +14,4 @@ This repository contains a collection of MSC Marc Mentat plugins.
 All the User Plugins coming from Github repo
 as a prefix gh
 
-user1_plugin describes how to create your own user plugin
+basic_demo describes how to create your own user plugin
