@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Zettlr" />
+  <meta name="date" content="" />
+  <title></title>
+  <style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #FF7C3B;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 80%;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: #333;
+    font-family: 'DejaVu', 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+
+  article {
+    width: 50%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 150%;
+  }
+
+  /* Better display on printing */
+  @media print {
+    article {
+      width: 90%;
+      font-size: 12pt;
+      margin: 0 auto;
+      line-height: 150%;
+    }
+  }
+
+  article p {
+    hyphens: auto;
+    text-align: justify;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+    color: #FF7C3B;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    font-size: 80%;
+    color: rgba(120, 120, 120, 1);
+    margin: 2% 5%;
+    line-height: 120%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 70%;
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+  }
+
+  th, td {
+    padding: 4px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  figure figcaption {
+    text-align: center;
+  }
+
+  /* List of classes taken from the skylighting lib */
+  /* See: https://github.com/jgm/skylighting/blob/master/skylighting-core/src/Skylighting/Format/HTML.hs */
+
+  /* Colors: Solarized theme (light) */
+  /* See: https://ethanschoonover.com/solarized/ */
+
+  /* Specific implementation: Taken from the GEdit theme (light) */
+  /* See: https://github.com/altercation/solarized/blob/master/gedit/solarized-light.xml */
+
+  /* Generic styles */
+  pre.sourceCode {
+    color: #657b83;
+    background-color: #fdf6e3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+    padding: 2px;
+    overflow: auto;
+  }
+
+  /* All classes, taken from skylighting lib */
+  .sourceCode .kw { color: #859900; font-weight: bold; } /* Keyword */
+  .sourceCode .dt { color: #b58900; } /* Datatype */
+  .sourceCode .df { color: #d33682; } /* Decimal values*/
+  .sourceCode .bn { color: #d33682; } /* base-n-integers */
+  .sourceCode .fl { color: #d33682; } /* Floats */
+  .sourceCode .ch { color: #2aa198; } /* Character */
+  .sourceCode .st { color: #2aa198; } /* String */
+  .sourceCode .vs { color: #2aa198; } /* Verbatim String */
+  .sourceCode .ss { color: #2aa198; } /* Special String */
+  .sourceCode .co { color: #586e75; font-style: italic; } /* Comment */
+  .sourceCode .ot { font-weight: bold; } /* Other token */
+  .sourceCode .al { color: #d33682; background-color: #073642; } /* Alert */
+  .sourceCode .fu { color: #268bd2; } /* Function name */
+  .sourceCode .re {} /* Region marker */
+  .sourceCode .er { color: #dc322f; font-weight: bold; } /* Error */
+  .sourceCode .cn { color: #2aa198; } /* Constant */
+  .sourceCode .sc { color: #dc322f; } /* Special character */
+  .sourceCode .im { color: #6c71c4; font-weight: bold; } /* Import statement */
+  .sourceCode .do { color: #dc322f; } /* Documentation string */
+  .sourceCode .an { color: #2aa198; } /* Annotation */
+  .sourceCode .cv { color: #6c71c4; } /* Comment var */
+  .sourceCode .va { color: #268bd2; } /* Variable */
+  .sourceCode .cf { color: #859900; } /* Control Flow (if, else, return) */
+  .sourceCode .op {} /* Operator */
+  .sourceCode .bu { color: #b58900; } /* Builtin function/class/identifier */
+  .sourceCode .ex { color: #268bd2; } /* Extension */
+  .sourceCode .pp { color: #cb4b16; } /* Preprocessor, like #import in C++ */
+  .sourceCode .at { color: #dc322f; } /* Attribute */
+  .sourceCode .in { color: #586e75; } /* Information */
+  .sourceCode .wa { color: #cb4b16; } /* Warning */
+  </style>
+
+<!-- Pandoc variables -->
+
+<!-- Additional CSS in case the user has passed it -->
+
+<!-- Include MathJax CDN, if applicable -->
+</head>
+<body>
+  <!-- Render in article for reader view enabling -->
+    <article>
+    <!-- Indentation must be zero for, e.g., PREs to work correctly -->
+<p>User 1 Plugin</p>
+<p>This is a sample plugin to demonstrate Mentat’s plugin framework. It executes a procedure file named <strong>user1_plugin.proc</strong>, which in turn changes to dark theme.</p>
+<p>Summary</p>
+<p>It is possible to customize Marc Mentat GUI with new user-defined options in different ways and locations, such as in the Menu Bar, Toolbar, and Main Menu (Page Tab). Furthermore, the execution of procedure and python files can also be automated with user-defined buttons and popmenus.</p>
+<p>Description</p>
+<p>In order to do this, it is necessary to edit some ASCII installation files of Marc Mentat with a text editor. These files are generally in .xml and .ms format. In most cases, no recompile is needed by Marc Mentat to apply effects on the new configuration.</p>
+<p>The installation files are usually found in the directory where Marc Mentat has been installed, depending on the specific version. By default <em>&lt;Mentat_Installation_Dir&gt;</em> is in <em>C:\Program Files\MSC.Software\Marc\20xx\mentat20xx\</em> .</p>
+<p>Only in case the new user-defined options trigger a pop menu dialog box, then a .ms file should be created and edited accordingly. All files should be saved in the same folder where the .xml file resides. </p>
+<p>Before editing the installation files, it is strongly recommended that backup files are copied in case they are needed to be restored.</p>
+<p>Make sure the attached files are downloaded and saved in the <em>&lt;Mentat_Installation_Dir&gt;* folder. For example: </em>C:\Program Files\MSC.Software\Marc\20xx\mentat20xx\menus\* .</p>
+<p><em>Customizing the Menu Bar</em> Edit the <em>menubar.xml</em> file located in *&lt;Mentat\_Installation\_Dir&gt;\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new menu bar named Utilities User 1:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="er">&lt;</span>/menu&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="kw">&lt;menu</span><span class="ot"> title=</span><span class="st">&quot;</span><span class="dv">&amp;amp;</span><span class="st">Utilities User 1&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;popmenu</span><span class="ot"> title=</span><span class="st">&quot;User-Defined Menu User 1&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ot">             popmenu=</span><span class="st">&quot;user_defined_popmenu&quot;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ot">             file=</span><span class="st">&quot;user.ms&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/menu&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>/menubar&gt;</span></code></pre></div>
+<p><em>Customizing the Toolbar</em> Edit the <em>toolbars.xml</em> file located in <em>&lt;Mentat_Installation_Dir&gt;*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new top toolbar icon named User 1 Toolbar, which in turn executes a procedure file to increase the font size. The </em>&lt;Mentat_Installation_Dir&gt;* path should be updated accordingly in the .xml code file:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="er">&lt;</span>/toolbar&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;toolbar</span><span class="ot"> name=</span><span class="st">&quot;User 1 Toolbar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;exec</span><span class="ot"> title=</span><span class="st">&quot;User 1 Toolbar&quot;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ot">            tooltip=</span><span class="st">&quot;Execute Procedure File user1_tb.proc&quot;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ot">            command=</span><span class="st">&#39;*exec_procedure &quot;</span><span class="er">&lt;</span><span class="st">Mentat_Installation_Dir&gt;\menus\user1_tb.proc&quot;&#39;</span><span class="kw">/&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/toolbar&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="er">&lt;</span>/top&gt;</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>/toolbars&gt;</span></code></pre></div>
+<p><em>Customizing the Main Menu (Page Tabs)</em> Edit the <em>main.xml</em> file located in *&lt;Mentat_Installation_Dir&gt;*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new Main Menu Page named User 1, which in turn executes the same procedure code of the sample toolbar, or a python code that prints a test output in the Marc Mentat Dialog Window. The &lt;Mentat_Installation_Dir&gt; path should be updated accordingly in the .xml code file:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">&lt;</span>/page&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;page</span><span class="ot"> title=</span><span class="st">&quot;User 1&quot;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ot">    name=</span><span class="st">&quot;user_1&quot;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!--nrows=&quot;1&quot;&gt;--&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;group</span><span class="ot"> title=</span><span class="st">&quot;Execute Files&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;exec</span><span class="ot"> title=</span><span class="st">&quot;Run Procedure File #1&quot;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ot">          tooltip=</span><span class="st">&quot;Execute Procedure File user1_tb.proc&quot;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ot">          command=</span><span class="st">&#39;*exec_procedure &quot;</span><span class="er">&lt;</span><span class="st">Mentat_Installation_Dir&gt;\menus\user1_tb.proc&quot;&#39;</span><span class="kw">/&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;exec</span><span class="ot"> title=</span><span class="st">&quot;Run Procedure File #2&quot;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ot">          tooltip=</span><span class="st">&quot;Execute Procedure File user1_mm.py&quot;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ot">          command=</span><span class="st">&#39;*py_file_run &quot;</span><span class="er">&lt;</span><span class="st">Mentat_Installation_Dir&gt;\menus\user1_mm.py&quot;&#39;</span><span class="kw">/&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/group&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/page&gt;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>/main&gt;</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<p>Alternatively, for customizing the Toolbar or Menu Bar, the user can also create user plugins in a similar fashion. Attached is a user1_plugin.zip example to be unzipped and saved in the plugins directory. This plugin changes the GUI to dark theme. The plugin directory where the customizing files should be stored can be found in <em>&lt;Mentat_Installation_Dir&gt;*. Care should be taken when using this alternate method with user plugins, since the files names for each plugin (<a href="http://plugin.ms/"><em>plugin.ms</em></a>, </em>menubar.xml<em>, and </em>toolbars.xml*) should not be modified to work properly.</p>
+<p>For further information about user plugins, please refer to the Mentat User’s Guide -&gt; Basics of Mentat -&gt; Mechanics of Mentat -&gt; User Plugins.</p>
+  </article>
+</body>
+</html>

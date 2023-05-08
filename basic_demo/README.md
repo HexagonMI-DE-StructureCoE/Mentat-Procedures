@@ -1,30 +1,26 @@
-﻿
 
-Title
+User 1 Plugin
 
-**User Customizing Marc Mentat GUI in the Menu Bar, Toolbar or Main Menu**
-Edit Title
+This is a sample plugin to demonstrate Mentat's plugin framework. It executes a procedure file named **user1_plugin.proc**, which in turn changes to dark theme.
 
 Summary
 
 It is possible to customize Marc Mentat GUI with new user-defined options in different ways and locations, such as in the Menu Bar, Toolbar, and Main Menu (Page Tab). Furthermore, the execution of procedure and python files can also be automated with user-defined buttons and popmenus.
 
-Edit Summary
-
 Description
 
 In order to do this, it is necessary to edit some ASCII installation files of Marc Mentat with a text editor. These files are generally in .xml and .ms format. In most cases, no recompile is needed by Marc Mentat to apply effects on the new configuration.
 
-The installation files are usually found in the directory where Marc Mentat has been installed, depending on the specific version. By default *<Mentat\_Installation\_Dir>* is in *C:\Program Files\MSC.Software\Marc\2022.4.0\mentat2022.4\* .
+The installation files are usually found in the directory where Marc Mentat has been installed, depending on the specific version. By default *<Mentat\_Installation\_Dir>* is in *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\* .
 
 Only in case the new user-defined options trigger a pop menu dialog box, then a .ms file should be created and edited accordingly. All files should be saved in the same folder where the .xml file resides. 
 
 Before editing the installation files, it is strongly recommended that backup files are copied in case they are needed to be restored.
 
-Make sure the attached files are downloaded and saved in the *<Mentat\_Installation\_Dir>\menus\* folder. For example: *C:\Program Files\MSC.Software\Marc\2022.4.0\mentat2022.4\menus\* .
+Make sure the attached files are downloaded and saved in the *<Mentat\_Installation\_Dir>\menus\* folder. For example: *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\menus\\* .
 
 *Customizing the Menu Bar*
-Edit the *menubar.xml* file located in *<Mentat\_Installation\_Dir>\menus\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new menu bar named Utilities User 1:
+Edit the *menubar.xml* file located in *<Mentat\\_Installation\\_Dir>\menus\\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new menu bar named Utilities User 1:
 
 
 
