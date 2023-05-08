@@ -2,7 +2,7 @@
 <menubar>
 
 
-  <menu title="Utilities GITHUB repo">
+  <menu title="gh Utilities">
 
     <exec    title="CREATE_CUBE_1x1x1"
              command='*exec_procedure "$MENU_FILE_DIR/cubetto.proc"'

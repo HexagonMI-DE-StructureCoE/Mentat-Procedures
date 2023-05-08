@@ -3,7 +3,7 @@
 
   <right_graphics>
 
-    <toolbar name="List Specification FS">
+    <toolbar name="gh List Specification FS">
 
       <exec title="All Existing"
             icon=":/images/general/AllExistingMedium.png"
