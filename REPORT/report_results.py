@@ -4,7 +4,7 @@ import os
 import sys 
 
 current_path = os.path.dirname(os.path.abspath(__file__))
-new_path = os.path.join(current_path, "PYTHON_LIB")
+new_path = os.path.join(current_path,"..", "PYTHON_LIB")
 
 print(new_path)
 from docx import Document
