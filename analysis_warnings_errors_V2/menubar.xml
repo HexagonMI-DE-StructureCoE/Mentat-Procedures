@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menubar>
 
-  <menu title="gh Results v2">
+  <menu title="gh Analysis Warnings">
 
     <exec title="Analysis Warnings &amp;&amp; Errors v2"
           command='*py_file_run "$MENU_FILE_DIR/_check_outfile.py"'
