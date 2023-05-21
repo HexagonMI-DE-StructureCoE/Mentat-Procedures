@@ -4,23 +4,11 @@ import os
 import sys 
 
 import subprocess
-
-import importlib
-
-def is_package_installed(package_name):
-    try:
-        importlib.import_module(package_name)
-        return True
-    except ImportError:
-        return False
     
 current_path = os.path.dirname(os.path.abspath(__file__))
 new_path = os.path.join(current_path, "..", "PYTHON_LIB")
 
 print(new_path)
-
-if not os.path.exists(new_path):
-    print("Please install docx lib") 
 
 sys.path.append(new_path)
 
