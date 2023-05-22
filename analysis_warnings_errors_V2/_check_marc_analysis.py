@@ -324,6 +324,7 @@ def main():
     i = 0
     continue1 = 0
     data_lines = []   # in perl dataitem
+    skippa_c1 = True
 
     with open(outfile, 'r') as datafile:
         for line in datafile:
@@ -516,6 +517,19 @@ def main():
                 #fileo.write(f"...Formulation for Group              : #{data_lines[iq]} = {data_lines[ip]} \n")
                 fileo.write(data_lines[idat+ig])
 
+        #fabio
+        if word == "*" and word_next=="*" and word_next2=="*" and word_next3=="*" and skippa_c1:
+            fileo.write("\n\n... * * * * * * \n")
+            for ig in range(200):
+                linea = data_lines[idat+1+ig]
+                if "*********" in linea:
+                    ig = 200
+                    fileo.write("\n... * * * * * * \n")
+                    break
+                fileo.write(linea[12:])
+                skippa_c1 = False
+
+
         if word == "dynamic" and word_next.isdigit():
             fileo.write("...Dynamic                            : ON \n")
 
@@ -655,6 +669,8 @@ def main():
             nproceed += 1
             if debug == 1:
                 fileo.write(f"...increment has not converged      : {nproceed} \n")
+
+
 
         # now search for specific words from the warning/error messages, store
         # the node/element numbers for later use
