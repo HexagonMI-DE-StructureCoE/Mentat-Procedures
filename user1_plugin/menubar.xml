@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menubar>
 
-  <menu title="gh Basic Demo">
+  <menu title="gh User Plugin Demo">
 
     <popmenu title="Run Procedure File"
              popmenu="user1_plugin_pm"

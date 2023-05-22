@@ -11,7 +11,8 @@ This repository contains a collection of MSC Marc Mentat plugins.
 
 ## User Plugins
 
-All the User Plugins coming from Github repo
-as a prefix gh
+The User Plugins can be found in Mentat menu and are idenfied by the prefix gh (GitHub)
 
-basic_demo describes how to create your own user plugin
+User Plugin Demo contains a basic introduction.
+
+Please start to contribute to this repo !!!
