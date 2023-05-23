@@ -15,9 +15,9 @@ The User Plugins can be found in Mentat menu and are idenfied by the prefix gh (
 Every Marc-Mentat can contribute to this repo !!!
 
 ## List
-1. [User Plugin Demo](user1_plugin\README.md) contains a basic introduction to user plugin development
-2. [CLEAN_OLD_PROC](CLEAN_OLD_PROC\README.md) can be used to delete mentat.*.proc file in working folder
-3. [CUBE_1x1x1](CUBE_1x1x1\README.md) create a model with 1 HEXA element 1x1x1 mm it could be used for example to test material law.
-4. [REPORT MODEL](REPORT\README.md) generates a short Word report.docx of your model
-5. [REPORT RESULTS](REPORT\README.md) generates a short Word report.docx of your results
-6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2\README.md) debugs the output file. 
+1. [User Plugin Demo](user1_plugin/README.md) contains a basic introduction to user plugin development
+2. [CLEAN_OLD_PROC](CLEAN_OLD_PROC/README.md) can be used to delete mentat.*.proc file in working folder
+3. [CUBE_1x1x1](CUBE_1x1x1/README.md) create a model with 1 HEXA element 1x1x1 mm it could be used for example to test material law.
+4. [REPORT MODEL](REPORT/README.md) generates a short Word report.docx of your model
+5. [REPORT RESULTS](REPORT/README.md) generates a short Word report.docx of your results
+6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
