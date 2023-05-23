@@ -23,4 +23,4 @@ Every Marc-Mentat users can contribute to this repo !!!
 4. [REPORT MODEL](REPORT/README.md) generates a short Word report.docx of your model
 5. [REPORT RESULTS](REPORT/README.md) generates a short Word report.docx of your results
 6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
-7. [list_speicification2](list_specification2/README.md) duplicate list specification toolbar
+7. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
