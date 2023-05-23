@@ -1,7 +1,7 @@
 # Mentat-Procedures list specification toolbar
 
-This is a sample plugin to create / duplicate list specification toolbar 
+This is a sample plugin to create / duplicate *list specification toolbar* 
 
-list specification toolbar is very useful and it could be duplicate in Mentat
+the toolbar list specification is often used in Mentat to select entities
 
-put it on the right
+this code duplicate the list specification toolbar so it can be duplicate for example in the right side of Mentat
