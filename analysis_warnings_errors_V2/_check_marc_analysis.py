@@ -462,20 +462,31 @@ def main():
         if word == "number" and word_next2 == "nodes" and word_next4 == "mesh************************":
             fileo.write("...Number of Nodes                    : %s \n" % word_next5)
 
+        #fabio material name
+        if word == "material" and word_next == "name":
+            fileo.write("\n...material name                      : %s \n" % word_next3)
+
         if word == "Youngs" and word_next == "modulus":
-            fileo.write("...Youngs Modulus                     : %s \n" % word_next2)
+            if word_next2 != "-":
+                fileo.write("...Youngs Modulus                     : %s \n" % word_next2)
 
         if word == "Poissons" and word_next == "ratio":
-            fileo.write("   Poissons Ratio                     : %s \n" % word_next2)
+            if word_next2 != "-":
+                fileo.write("   Poissons Ratio                     : %s \n" % word_next2)
 
         if word == "mass" and word_next == "density" and word_next3 == "heat":
-            fileo.write("...Density                            : %s \n" % word_next5)
+            if word_next4 != "-":
+                fileo.write("...Density                            : %s \n" % word_next5)
 
         if word == "Coefficient" and word_next2 == "thermal":
-            fileo.write("   Thermal Expansion Coeff.           : %s \n" % word_next4)
+            if word_next4 != "-":
+                fileo.write("   Thermal Expansion Coeff.           : %s \n" % word_next4)
 
         if word == "Yield" and word_next == "stress":
-            fileo.write("   Yield Stress                       : %s \n" % word_next2)
+            if word_next2 == "-" or "1.00000E+20" in word_next2:
+                pass
+            else:
+                fileo.write("   Yield Stress                       : %s \n" % word_next2)
 
         #                             flag for element storage (ielsto)  0
         if word == "flag" and word_next2 == "element" and word_next3 == "storage":
@@ -554,7 +565,7 @@ def main():
             fileo.write("...Transformations are present \n")
 
         if word == "number" and word_next == "of" and word_next2 == "bodies":
-            fileo.write(f"...Number of Contact Bodies           : {word_next4} \n")
+            fileo.write(f"\n...Number of Contact Bodies           : {word_next4} \n")
 
         # body number     3 is a displacement controlled rigid surface 
         if word == "body" and word_next == "number" and word_next7 == "rigid":
