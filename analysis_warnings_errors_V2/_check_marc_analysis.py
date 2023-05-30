@@ -15,7 +15,7 @@ try:
 except:
     print("cannot import py_mentat ")
  
-
+import shutil
 
 def main():
 
@@ -26,7 +26,8 @@ def main():
     # Python script to search through a marc output file and extract the 
     # nodes or elements associated with common warnings or errors
 
-    # This original Perl code has been converted into this Python code 
+    # This original code was written in Perl language
+    # this script is a tranlation into Python code 
 
     #
     # The nodes or elements for each type of warning or error are
@@ -139,7 +140,8 @@ def main():
     #---------------------------------------------------------------------
     #
 
-    fileo = open("output_python.txt","w")
+    filename_out = "output_python.txt"
+    fileo = open( filename_out ,"w")
 
     now = datetime.datetime.now().replace(microsecond=0) 
     fileo.write("Created : " + str(now))
@@ -1643,9 +1645,19 @@ def main():
 
     fileo.close()
 
+    #outfile
+    try:
+        #creatnig a copy of the python report
+        shutil.copy(filename_out, outfile.replace(".out","_python.txt"))
+    except:
+        print("no copy")
     return 
 
 if __name__ == '__main__':
+
+    #TODO: an idea could be to mantain the possibility to run it from shell
+
+
     main()
     
     print("Done")
