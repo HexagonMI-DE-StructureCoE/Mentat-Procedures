@@ -24,3 +24,7 @@ Every Marc-Mentat users can contribute to this repo !!!
 5. [REPORT RESULTS](REPORT/README.md) generates a short Word report.docx of your results
 6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
 7. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
+
+Marc solver can be customized as well
+take a look to this repo
+https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main
