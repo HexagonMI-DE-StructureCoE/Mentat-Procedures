@@ -307,8 +307,10 @@ def main():
     if guiflag == 1:
         DATA = open("check_analysis_python.proc", "w")
         fileo.write("GUI commands will be written to check_analysis_python.proc\n")
+        #DATA_res  = open("check_analysis_python_res.proc" , "w")
+        #DATA_disp = open("check_analysis_python_disp.proc", "w")
         # ...additional output for tying debug messages if required
-        TYING = open("check_analysis_tying_python", "w")
+        # TYING = open("check_analysis_tying_python", "w")
         fileo.write("Debug TYING commands will be written to check_analysis_tying.proc\n")
     # ...patran ses file
     else:
@@ -1439,9 +1441,6 @@ def main():
         nselected_sorted[imode] = len(selected_sorted[imode]) 
 
 
-    # print("----"*20)
-    # print(selected_sorted[6])
-
     # simone 1900 - 2000
     #---------------------------------------------------------------------
     # print a summary list of the number of sorted nodes/elements 
@@ -1535,7 +1534,7 @@ def main():
 
                 elif imode == 25:
 
-                # marco 2000 - fine
+                    # marco 2000 - fine
                     pass 
                     
                     #print inserted node to the external tying file
@@ -1573,7 +1572,7 @@ def main():
         DATA.write("*command_group_end\n")
 
     #-----------------------------loop over each set of element/node lists
-    else:
+    else:   # qui per Patran
 
         DATA.write( "gu_fit_view(  )\n")
         #and write commands to the session file
@@ -1626,6 +1625,8 @@ def main():
 
     #                             close mentat proc file
     DATA.close()
+    #DATA_res.close()
+    #DATA_res.close()
 
     #                             sound a bell on finish
     #fileo.write("\a")
