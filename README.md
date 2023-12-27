@@ -7,7 +7,7 @@ This repo is a collection of MSC Mentat plugins.
 MSC Mentat users can easily install and use these.
 
 4 steps are necessary:
-1. Download this repo on your machine and extract in *yourfolder*
+1. Download (or clone) this repo on your machine and extract in *yourfolder*
 2. In Marc/Mentat GUI activate User Plugins
 3. Select from Mentat *yourfolder*   
 4. Restart MSC Marc Mentat and enjoy these custom tools
@@ -27,4 +27,8 @@ gh_*nameuserplugins*
 7. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
 
 #### MSC Marc repo
-You can be interested also to [MSC Marc subroutine repo here](https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main) 
+You can be interested also to [MSC Marc subroutine repo here](https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main)
+
+### Contribute to this repo
+
+Fork and contribute adding you Mentat User Plugin

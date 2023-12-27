@@ -1,26 +1,47 @@
 
-## User 1 Plugin
+## Example 1 User Plugin
 
-This is a sample plugin to demonstrate Mentat's plugin framework. 
-It executes a procedure file named **user1_plugin.proc**, which in turn changes to dark theme.
 
-#### Summary
+It is possible to customize MSC Mentat GUI in different ways and locations, such as in the Menu Bar, Toolbar, and Main Menu (Page Tab). 
 
-It is possible to customize Marc Mentat GUI with new user-defined options in different ways and locations, such as in the Menu Bar, Toolbar, and Main Menu (Page Tab). Furthermore, the execution of procedure and python files can also be automated with user-defined buttons and popmenus.
+The execution of procedure and python files can also be automated with user-defined buttons and popmenus.
 
-#### Description
 
-In order to do this, it is necessary to edit some ASCII installation files of Marc Mentat with a text editor. These files are generally in .xml and .ms format. In most cases, no recompile is needed by Marc Mentat to apply effects on the new configuration.
+#### How to customize MSC Mentat
+There are 2 methods:
+- The new method using User Plugin
+- The old method modifing the Mentat installation
 
-The installation files are usually found in the directory where Marc Mentat has been installed, depending on the specific version. 
+#### The User Plugin Method
+
+For customizing the Toolbar or Menu Bar, the user can create user plugins without change files in installation folder.
+
+### Example 1 user1_plugin
+**user1_plugin.proc** changes interface to dark theme.
+This plugin changes the GUI to dark theme: it is a simple command recorded into a mentat procedure.
+
+This example plugin adds an icon in the toolbar and adds an option inside the menubar
+
+The plugin directory where the customizing files should be stored can be found in *<Mentat\_Installation\_Dir>\plugins\*. 
+
+Care should be taken when using this alternate method with user plugins, since the files names for each plugin ([*plugin.ms*](plugin.ms), [*menubar.xml*](menubar.xml), and [*toolbars.xml*](toolbars.xml) ) should not be modified to work properly.
+
+Please check the files in this folder to better understand how it works.
+
+
+#### The Old Method
+
+(It is deprecated nowadays.)
+
+It is reported here because there are many examples still based on this way.
+
+It is necessary to edit some ASCII installation files of Marc Mentat with a text editor. 
+The installation files are usually found in the directory where MSC Mentat has been installed, depending on the specific version. 
 By default *<Mentat\_Installation\_Dir>* is in *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\* .
+These files are generally in .xml and .ms format. 
+In most cases and in recent releases of Mentat, no recompile is needed by Marc Mentat to apply effects on the new configuration.
 
-Only in case the new user-defined options trigger a pop menu dialog box, then a .ms file should be created and edited accordingly. All files should be saved in the same folder where the .xml file resides. 
-
-Before editing the installation files, it is strongly recommended that backup files are copied in case they are needed to be restored.
-
-Make sure the attached files are downloaded and saved in the *<Mentat\_Installation\_Dir>\menus\* folder. For example: *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\menus\\* .
-
+### MSC MENTAT SYNTAX MENU
 *Customizing the Menu Bar*
 Edit the *menubar.xml* file located in *<Mentat\\_Installation\\_Dir>\menus\\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new menu bar named Utilities User 1:
 
@@ -71,6 +92,11 @@ Edit the *main.xml* file located in *<Mentat\_Installation\_Dir>\menus\*. Bel
 ```
 
 
-Alternatively, for customizing the Toolbar or Menu Bar, the user can also create user plugins in a similar fashion. Attached is a user1\_plugin.zip example to be unzipped and saved in the plugins directory. This plugin changes the GUI to dark theme. The plugin directory where the customizing files should be stored can be found in *<Mentat\_Installation\_Dir>\plugins\*. Care should be taken when using this alternate method with user plugins, since the files names for each plugin ([*plugin.ms*](plugin.ms), [*menubar.xml*](menubar.xml), and [*toolbars.xml*](toolbars.xml) ) should not be modified to work properly.
+Only in case the new user-defined options trigger a pop menu dialog box, then a .ms file should be created and edited accordingly. All files should be saved in the same folder where the .xml file resides. 
+
+Before editing the installation files, it is strongly recommended that backup files are copied in case they are needed to be restored.
+
+Make sure the attached files are downloaded and saved in the *<Mentat\_Installation\_Dir>\menus\* folder. For example: *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\menus\\* .
+
 
 For further information about user plugins, please refer to the Mentat User’s Guide -> Basics of Mentat -> Mechanics of Mentat -> User Plugins.
