@@ -1,23 +1,24 @@
 # Mentat-Procedures
 
-This repository contains a collection of MSC Marc Mentat plugins.
+This repo is a collection of MSC Mentat plugins.
+
 
 ## How to install
-1. Download the project
+MSC Mentat users can easily install and use these.
+
+4 steps are necessary:
+1. Download this repo on your machine and extract in *yourfolder*
 2. In Marc/Mentat GUI activate User Plugins
-3. Select the folder that contains the plugins 
-4. Restart MSC Marc Mentat
+3. Select from Mentat *yourfolder*   
+4. Restart MSC Marc Mentat and enjoy these custom tools
 
+All the user plugins coming from this repo are idenfied by the prefix gh (GitHub).
 
-## User Plugins
+gh_*nameuserplugins*
 
-The User Plugins can be found in Mentat menu and are idenfied by the prefix gh (GitHub).
+##  Summary of some User Plugins in this repo
 
-Every Marc-Mentat users can contribute to this repo !!!
-
-
-## List
-1. [User Plugin Demo](user1_plugin/README.md) contains a basic introduction to user plugin development
+1. [User Plugin Demo](user1_plugin/README.md) contains a basic introduction/tutorial to user plugin development
 2. [CLEAN_OLD_PROC](CLEAN_OLD_PROC/README.md) can be used to delete mentat.*.proc file in working folder
 3. [CUBE_1x1x1](CUBE_1x1x1/README.md) create a model with 1 HEXA element 1x1x1 mm it could be used for example to test material law.
 4. [REPORT MODEL](REPORT/README.md) generates a short Word report.docx of your model
@@ -25,6 +26,5 @@ Every Marc-Mentat users can contribute to this repo !!!
 6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
 7. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
 
-Marc solver can be customized as well
-take a look to this repo
-https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main
+#### MSC Marc repo
+You can be interested also to [MSC Marc subroutine repo here](https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main) 
