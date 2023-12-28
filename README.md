@@ -4,7 +4,7 @@ This repo is a collection of MSC Mentat plugins.
 
 
 ## How to install
-MSC Mentat users can easily install and use these.
+MSC Mentat users can easily install and use these User Plugins.
 
 4 steps are necessary:
 1. Download (or clone) this repo on your machine and extract in *yourfolder*
@@ -19,12 +19,12 @@ gh_*nameuserplugins*
 ##  Summary of some User Plugins in this repo
 
 1. [User Plugin Demo](user1_plugin/README.md) contains a basic introduction/tutorial to user plugin development
-2. [CLEAN_OLD_PROC](CLEAN_OLD_PROC/README.md) can be used to delete mentat.*.proc file in working folder
-3. [CUBE_1x1x1](CUBE_1x1x1/README.md) create a model with 1 HEXA element 1x1x1 mm it could be used for example to test material law.
-4. [REPORT MODEL](REPORT/README.md) generates a short Word report.docx of your model
-5. [REPORT RESULTS](REPORT/README.md) generates a short Word report.docx of your results
-6. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
-7. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
+2. [list_specification2](list_specification2/README.md) duplicate list specification toolbar
+3. [CUBE_1x1x1](CUBE_1x1x1/README.md) create a model with 1 HEXA element 1x1x1 mm (it could be used to test material law or test installation).
+4. [CLEAN_OLD_PROC](CLEAN_OLD_PROC/README.md) can be used to delete mentat.*.proc file in working folder
+5. [REPORT MODEL](REPORT/README.md) generates a short Word report.docx of your model
+6. [REPORT RESULTS](REPORT/README.md) generates a short Word report.docx of your results
+7. [analysis_warnings_errors_V2](analysis_warnings_errors_V2/README.md) debugs the output file. 
 
 #### MSC Marc repo
 You can be interested also to [MSC Marc subroutine repo here](https://github.com/HexagonMI-DE-StructureCoE/Marc-Subroutines/tree/main)
@@ -32,3 +32,7 @@ You can be interested also to [MSC Marc subroutine repo here](https://github.com
 ### Contribute to this repo
 
 Fork and contribute adding you Mentat User Plugin
+
+
+
+[MSC Mentat Github repo](https://github.com/HexagonMI-DE-StructureCoE/Mentat-Procedures/tree/main)

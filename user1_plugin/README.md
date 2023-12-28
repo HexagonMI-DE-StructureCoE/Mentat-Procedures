@@ -1,47 +1,40 @@
 
 ## Example 1 User Plugin
 
+#### How to customize MSC Mentat
 
 It is possible to customize MSC Mentat GUI in different ways and locations, such as in the Menu Bar, Toolbar, and Main Menu (Page Tab). 
 
 The execution of procedure and python files can also be automated with user-defined buttons and popmenus.
 
 
-#### How to customize MSC Mentat
-There are 2 methods:
-- The new method using User Plugin
-- The old method modifing the Mentat installation
+#### User Plugins 
 
-#### The User Plugin Method
+The Marc 2022.2 release introduces a new framework for creating plugins in Mentat. A plugin can extend the Mentat user interface by adding, for instance, a toolbar with icons to perform certain tasks or a popup menu in which the user can set some parameters and then click a button to perform a task. A task can be as simple as calling a Mentat command, or a more complex operation implemented in a procedure file or a Python script. 
 
-For customizing the Toolbar or Menu Bar, the user can create user plugins without change files in installation folder.
+
+In user-guide Highlights of Previous Releases 
+a description of this funcionality is available
+![List](list_standard.png)
+
 
 ### Example 1 user1_plugin
+
+Here is another basic example
+
+This example plugin adds **an icon in the toolbar** and adds **an option inside the menubar**.
+
+This user plugin **user1_plugin** changes the GUI to dark theme: this is a simple command recorded into a mentat procedure.
 **user1_plugin.proc** changes interface to dark theme.
-This plugin changes the GUI to dark theme: it is a simple command recorded into a mentat procedure.
 
-This example plugin adds an icon in the toolbar and adds an option inside the menubar
 
-The plugin directory where the customizing files should be stored can be found in *<Mentat\_Installation\_Dir>\plugins\*. 
+To define a user plugin it is important to pay attention to directory structure.
 
-Care should be taken when using this alternate method with user plugins, since the files names for each plugin ([*plugin.ms*](plugin.ms), [*menubar.xml*](menubar.xml), and [*toolbars.xml*](toolbars.xml) ) should not be modified to work properly.
+The files names for each plugin ([*plugin.ms*](plugin.ms), [*menubar.xml*](menubar.xml), and [*toolbars.xml*](toolbars.xml) ) should not be modified to work properly.
 
 Please check the files in this folder to better understand how it works.
 
-
-#### The Old Method
-
-(It is deprecated nowadays.)
-
-It is reported here because there are many examples still based on this way.
-
-It is necessary to edit some ASCII installation files of Marc Mentat with a text editor. 
-The installation files are usually found in the directory where MSC Mentat has been installed, depending on the specific version. 
-By default *<Mentat\_Installation\_Dir>* is in *C:\\Program Files\\MSC.Software\\Marc\\20xx\\mentat20xx\\* .
-These files are generally in .xml and .ms format. 
-In most cases and in recent releases of Mentat, no recompile is needed by Marc Mentat to apply effects on the new configuration.
-
-### MSC MENTAT SYNTAX MENU
+##### MSC MENTAT SYNTAX MENU
 *Customizing the Menu Bar*
 Edit the *menubar.xml* file located in *<Mentat\\_Installation\\_Dir>\menus\\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new menu bar named Utilities User 1:
 
@@ -100,3 +93,7 @@ Make sure the attached files are downloaded and saved in the *<Mentat\_Installa
 
 
 For further information about user plugins, please refer to the Mentat User’s Guide -> Basics of Mentat -> Mechanics of Mentat -> User Plugins.
+
+
+[<-- go back home](../README.md)
+[MSC Mentat Github repo](https://github.com/HexagonMI-DE-StructureCoE/Mentat-Procedures/tree/main)
