@@ -32,7 +32,3 @@ You can be interested also to [MSC Marc subroutine repo here](https://github.com
 ### Contribute to this repo
 
 Fork and contribute adding you Mentat User Plugin
-
-
-
-[MSC Mentat Github repo](https://github.com/HexagonMI-DE-StructureCoE/Mentat-Procedures/tree/main)
