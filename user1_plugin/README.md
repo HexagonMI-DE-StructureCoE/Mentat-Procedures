@@ -51,7 +51,7 @@ Edit the *menubar.xml* file located in *<Mentat\\_Installation\\_Dir>\menus\\
 ```
 
 *Customizing the Toolbar*
-Edit the *toolbars.xml* file located in *<Mentat\_Installation\_Dir>\menus\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new top toolbar icon named User 1 Toolbar, which in turn executes a procedure file to increase the font size. The *<Mentat\_Installation\_Dir>* path should be updated accordingly in the .xml code file:
+Edit the *toolbars.xml* file located in *<Mentat\_Installation\_Dir>\menus\*. Below is an example of a portion of the text code to be appended at the end of the file for the creation of a new top toolbar icon named User 1 Toolbar, which in turn executes a procedure file to change the theme. The *<Mentat\_Installation\_Dir>* path should be updated accordingly in the .xml code file:
 
 ```xml 
 
